@@ -1,18 +1,18 @@
 public class PopCornMaker {
 
-    public String popcorn;
+    public String flavor;
 
-    public void makePopcorn(String popcorn){
-        System.out.println(popcorn+ " Popcorn created ");
+    public void makePopcorn(String flavor){
+        System.out.println(flavor+ " Popcorn created ");
     }
 
     public void caramel(){
-        this.popcorn= "Caramel";
-        makePopcorn(popcorn);
+        this.flavor= "Caramel";
+        makePopcorn(flavor);
     }
 
     public void salt(){
-        this.popcorn= "Salty";
-        makePopcorn(popcorn);
+        this.flavor= "Salty";
+        makePopcorn(flavor);
     }
 }

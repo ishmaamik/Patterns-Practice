@@ -1,9 +1,9 @@
 public class HomeTheatre {
-    String popcorn;
+    String flavor;
     String movie;
 
-    public HomeTheatre(String popcorn, String movie) {
-        this.popcorn= popcorn;
+    public HomeTheatre(String flavor, String movie) {
+        this.flavor= flavor;
         this.movie= movie;
     }
     DVDPlayer dvdplayer= new DVDPlayer();
@@ -15,7 +15,7 @@ public class HomeTheatre {
         dvdplayer.playMovie(movie);
         light.turnOn();
         tv.turnOn();
-        popcornMaker.makePopcorn(popcorn);
+        popcornMaker.makePopcorn(flavor);
     }
 
     public void dimLight(){
