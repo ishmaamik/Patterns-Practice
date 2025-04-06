@@ -7,7 +7,7 @@ public class Main {
 
         HomeTheatre homeTheatre= new HomeTheatre("Salt", "Avengers");
         homeTheatre.start();
-        homeTheatre.caramelPopcorn();
+        homeTheatre.changePopcornFlavor("Caramel");
         homeTheatre.dimLight();
         homeTheatre.changeMovie("Endgame");
     }

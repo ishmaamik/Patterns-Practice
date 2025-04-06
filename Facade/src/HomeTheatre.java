@@ -22,8 +22,13 @@ public class HomeTheatre {
         light.dimLight();
     }
 
-    public void caramelPopcorn(){
-        popcornMaker.caramel();
+    public void changePopcornFlavor(String flavor){
+        if(flavor=="Caramel") {
+            popcornMaker.caramel();
+        }
+        else if(flavor=="Salty"){
+            popcornMaker.salt();
+        }
     }
 
     public void changeMovie(String movie){
