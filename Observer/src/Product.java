@@ -7,6 +7,10 @@ public class Product {
         subsList.add(sub);
     }
 
+    public void removeSubscriber(Subscribe s){
+        subsList.remove(s);
+    }
+
     public void sendNotification(String notification){
         for(Subscribe sub: subsList){
             sub.getNotification(notification);

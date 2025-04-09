@@ -9,5 +9,7 @@ public class Main {
         Seller s1= new Seller("Ashwin");
         s1.subscribe(p1);
         p1.sendNotification("New Watch Available!");
+        c1.unsubscribe(p1);
+        p1.sendNotification("New Belt available!");
     }
 }

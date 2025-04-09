@@ -13,6 +13,11 @@ public class Customer implements Subscribe{
         product.addSubscriber(this);
     }
 
+    @Override
+    public void unsubscribe(Product p) {
+        p.removeSubscriber(this);
+    }
+
     public void getNotification(String message){
         System.out.println("Dear "+this.name+", New notification: "+message);
     }
