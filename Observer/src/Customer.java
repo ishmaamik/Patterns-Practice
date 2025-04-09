@@ -1,5 +1,5 @@
 public class Customer implements Subscribe{
-    private Product product;
+
     private String name;
 
     public Customer(String name) {
@@ -10,7 +10,6 @@ public class Customer implements Subscribe{
     }
     @Override
     public void subscribe(Product product) {
-        this.product= product;
         product.addSubscriber(this);
     }
 

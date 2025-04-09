@@ -1,5 +1,4 @@
 public class Seller implements Subscribe{
-    private Product product;
     private String name;
 
     public Seller(String name) {
@@ -7,7 +6,6 @@ public class Seller implements Subscribe{
     }
 
     public void subscribe(Product product) {
-        this.product= product;
         product.addSubscriber(this);
     }
     public void getNotification(String message){
