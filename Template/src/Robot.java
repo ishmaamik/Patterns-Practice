@@ -1,7 +1,7 @@
 public abstract class Robot {
     //usually abstract when subclasses define the algorithms
     //but concrete is fine
-    protected void start(){
+    private void start(){
         System.out.println("System booted");
     }
     //protected so that the children can modify the logic
